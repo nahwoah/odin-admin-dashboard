@@ -11,7 +11,7 @@ html, body{
 }
 
 body{
-  background-color: #F5E9D8;
+  background-color: #eeeaea;
   font-family: roboto, sans-serif;
 }
 
@@ -47,7 +47,7 @@ body{
   padding-left: 1vh;
 
   grid-column: 2/3;
-  background-color: #2FA4D7;
+  background-color: #fd6260;
   box-shadow: 3px 3px 20px #888888;
 }
 
@@ -61,7 +61,7 @@ body{
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 2rem 5vh repeat(6, minmax(1.5rem, 2rem)) 5vh repeat(3, minmax(1.5rem, 2rem)); 
 
-  background-color: #E76F2E;
+  background-color: #00baa6;
 }
 
 .sidebar ul{
@@ -118,7 +118,7 @@ body{
   margin-top: 5vh;
   padding: 2vh;
 
-  background-color: #F5E9D8;
+  background-color: #eeeaea;
 }
 
 .cards{
@@ -138,7 +138,7 @@ body{
   padding: 10px;
   background-color: #FFFFFF;
   border-radius: 0.4em;
-  border-left: 6px solid #E76F2E;
+  border-left: 6px solid #fd6260;
 }
 
 .announcement{
