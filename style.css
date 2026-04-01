@@ -52,7 +52,7 @@ body{
 }
 
 .sidebar{
-  color: #383636;
+  color: #39454c;
   padding-top: 3vh;
   font-size: 2ch;
   grid-column: 1/2;
@@ -94,7 +94,7 @@ body{
 }
 
 .sidebar ul img{
-  filter: invert(14%) sepia(67%) saturate(21%) hue-rotate(323deg) brightness(100%) contrast(84%);
+  filter: invert(22%) sepia(36%) saturate(293%) hue-rotate(158deg) brightness(87%) contrast(82%);
   height: 3vh;
   width: 3vh;
   
