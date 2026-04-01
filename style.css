@@ -52,6 +52,7 @@ body{
 }
 
 .sidebar{
+  color: #383636;
   padding-top: 3vh;
   font-size: 2ch;
   grid-column: 1/2;
@@ -93,6 +94,7 @@ body{
 }
 
 .sidebar ul img{
+  filter: invert(14%) sepia(67%) saturate(21%) hue-rotate(323deg) brightness(100%) contrast(84%);
   height: 3vh;
   width: 3vh;
   
@@ -138,7 +140,8 @@ body{
   padding: 10px;
   background-color: #FFFFFF;
   border-radius: 0.4em;
-  border-left: 6px solid #fd6260;
+  border-left: 6px solid #f3c90f;
+  /* #fd6260; */
 }
 
 .announcement{
