@@ -24,6 +24,8 @@ body{
 
 #site-search{
   width: 50vw;
+  border-radius: 10px;
+  border: none;
 }
 
 .header img{
@@ -33,7 +35,7 @@ body{
 
 .header > .notifications{
   border: none;
-  border-radius: 35px;
+  border-radius: 50px;
 }
 
 .header > .notifications:hover{
@@ -46,28 +48,54 @@ body{
 
   grid-column: 2/3;
   background-color: #2FA4D7;
-  box-shadow: 10px 10px 8px #888888;
+  box-shadow: 3px 3px 20px #888888;
 }
 
 .sidebar{
-  padding-top: 1vh;
+  padding-top: 3vh;
+  font-size: 2ch;
   grid-column: 1/2;
   grid-row: 1/-1;
 
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 8vh repeat(6, minmax(10px, 20px)) 8vh repeat(3, minmax(11px, 20px)); 
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 2rem 5vh repeat(6, minmax(1.5rem, 2rem)) 5vh repeat(3, minmax(1.5rem, 2rem)); 
 
   background-color: #E76F2E;
 }
 
 .sidebar ul{
   list-style: none;
+  padding-left: 5vh;
+  align-items: center;
+}
+
+.sidebar ul:first-child{
+  /* padding: 0; */
+  padding-left: 1vh;
+  grid-column: 2/3;
+  list-style: none;
   display: grid;
   grid-template-columns: subgrid;
   grid-template-rows: subgrid;
-  grid-column: 1/-1;
+  
   grid-row: 1/-1;
+}
+
+
+.sidebar ul:last-child{
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  justify-items: center;
+}
+
+.sidebar ul img{
+  height: 3vh;
+  width: 3vh;
+  
 }
 
 /* .sidebar ul > :nth-child(1), .sidebar ul > :nth-child(7){
@@ -96,28 +124,34 @@ body{
 .cards{
   margin-right: 1vh;
   padding: 1vh;
-  grid-row: 2 /4;
+  
+  grid-row: 2 /5;
 
   display: grid;
   
-  gap: 0.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(15vw, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(1fr, 15vh));
-  height: 60vh;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(20vh, 1fr));
 }
 
 .card{
   padding: 10px;
   background-color: #FFFFFF;
-  border-radius: 1em;
+  border-radius: 0.4em;
+  border-left: 6px solid #E76F2E;
 }
 
 .announcement{
   grid-column: 2/3;
 }
 
+.trending-title{
+  grid-row: 3/4;
+}
+
 .trending-cards{
   grid-column: 2/3;
+  grid-row: 4/5;
 }
 
 
