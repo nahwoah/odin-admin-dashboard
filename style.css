@@ -51,10 +51,17 @@ body{
   box-shadow: 3px 3px 20px #888888;
 }
 
+.search-button {
+  background: transparent;
+  border: none;
+}
+
 .sidebar{
+  
+  font-weight: 600;
   color: #39454c;
   padding-top: 3vh;
-  font-size: 2ch;
+  font-size: 1rem;
   grid-column: 1/2;
   grid-row: 1/-1;
 
@@ -85,12 +92,14 @@ body{
 
 
 .sidebar ul:last-child{
+  padding: 0;
+  padding-right: 3px;
   display: grid;
   grid-template-columns: subgrid;
   grid-template-rows: subgrid;
   grid-column: 1/2;
   grid-row: 1/-1;
-  justify-items: center;
+  justify-items: end;
 }
 
 .sidebar ul img{
@@ -148,13 +157,39 @@ body{
   grid-column: 2/3;
 }
 
+.annoucements-title{
+  font-size: 1.3rem;
+}
+
+.annoucements-card{
+  background: #FFFFFF;
+  padding: 1vh;
+  border-radius: 0.5rem;
+}
+
+.annoucements-card-title{
+  font-size: 1rem;
+}
+
+.ellipsed-text{
+  font-size: 0.6rem;
+  height: 25px;
+  width: 105px;
+  border: 1px solid;
+  text-overflow: ellipsis;
+}
+
 .trending-title{
   grid-row: 3/4;
 }
 
-.trending-cards{
+
+.trending{
   grid-column: 2/3;
   grid-row: 4/5;
+  border-radius: 0.5rem;
+  background: #FFFFFF;
+  padding: 1vh;
 }
 
 
