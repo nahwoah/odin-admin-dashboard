@@ -312,6 +312,21 @@ body{
   background: #FFFFFF;
   border: 3vh solid #FFFFFF;
   margin: 1vh;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(auto-fit, minmax(2vh,1fr));
 }
 
+.trending-icon{
+  align-self: center;
+}
+
+.description{
+  font-size: 2vh;
+}
+
+.trending p{
+  align-items: center;
+}
 
